@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid black;
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-rails {
+  text-decoration: none;
+  color: black;
+}
+
+.container-show {
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+ .edit_task {
+  margin: 8px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+ }
+ .new_task {
+  margin: 8px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .form-input {
+  padding: 8px
+ }

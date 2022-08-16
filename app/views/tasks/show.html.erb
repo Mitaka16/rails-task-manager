@@ -1,0 +1,12 @@
+<div class="container-show">
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<% if @task.completed === false %>
+  <i class="fa-regular fa-square-check"></i> <%= "This task is not completed yet" %>
+<% else %>
+  <i class="fa-solid fa-square-check"></i> <%= 'This task is already completed' %>
+<% end %>
+
+<p><%= link_to 'Edit this task', edit_task_path, class: 'btn btn-danger mt-3'%></p>
+<p><%= link_to 'Back to tasks list', tasks_path, class: 'btn btn-danger' %></p>
+</div>
